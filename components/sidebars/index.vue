@@ -15,8 +15,9 @@
       <dropdowns
         :title="'Dropdown'"
         :description="'Card description will goes here'"
-        :dropdownClass="{dropdownClass}"
-        :detailsClass="{detailsClass}"
+        :dropdownClass="dropdownClass"
+        :detailsClass="detailsClass"
+        :descriptionClass="descriptionClass"
       />
       <NuxtLink to="/services" class="block p-4 hover:text-white rounded-xl" :class="$route.path === '/services' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500'">
         Services
@@ -35,8 +36,9 @@
 export default {
   data() {
     return {
-      dropdownClass: "flex items-center font-bold",
-      detailsClass: "block p-4 rounded-xl mx-4",
+      dropdownClass: "text-sm",
+      detailsClass: "block rounded-xl p-4",
+      descriptionClass:"text-sm"
     };
   },
 };

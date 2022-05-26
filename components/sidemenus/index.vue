@@ -50,8 +50,9 @@
       <dropdowns
         :title="'Dropdown'"
         :description="'Card description will goes here'"
-        :dropdownClass="{dropdownClass}"
-        :detailsClass="{detailsClass}"
+        :dropdownClass="dropdownClass"
+        :detailsClass="detailsClass"
+        :descriptionClass="descriptionClass"
       />
       <NuxtLink to="/services" class="block p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
         Service
@@ -74,8 +75,9 @@ export default {
   props: ["open"],
   data() {
     return {
-      dropdownClass: "flex items-center font-bold",
-      detailsClass: "block p-4 rounded-xl mx-4",
+      dropdownClass: "flex items-center",
+      detailsClass: "block rounded-xl p-4 mx-4",
+      descriptionClass:"text-sm"
     };
   },
   methods: {
