@@ -39,3 +39,17 @@ svg {
 summary::-webkit-details-marker {
   display: none;
 }
+
+.glossyEffect{
+  @apply backdrop-blur-[2px] bg-white bg-opacity-20 shadow-red-100 rounded-lg border-b-4 border-corporate;
+  box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+}
+.customInput{
+  @apply w-full border-b-2 placeholder-transparent border-corporateGray bg-transparent focus:outline-none focus:border-2 pt-2 pl-2 pr-2 focus:rounded-md;
+}
+.customLabel{
+  @apply absolute left-0 -top-4 text-base text-corporateBlack transition-all duration-300 ease-in-out peer-placeholder-shown:text-base peer-placeholder-shown:text-corporate peer-placeholder-shown:top-2 peer-focus:-top-4 peer-focus:left-2 peer-focus:bg-corporateLight peer-focus:px-1;
+}
+.customBtn{
+  @apply w-1/2 p-2 font-semibold text-sm bg-corporate text-corporateLight rounded-full shadow-sm hover:scale-105 ease-out duration-300;
+}
