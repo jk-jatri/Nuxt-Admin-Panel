@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  postition: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+details {
+  user-select: none;
+  max-height: 62px;
+}
+details summary svg {
+  transform: rotate(90deg);
+}
+
+details[open] {
+  background: white;
+  color: black;
+  max-height: 100vh;
+}
+details[open] summary svg {
+  transform: rotate(-90deg);
+}
+
+details[open] summary ~ * {
+  animation: ease-opacity-t-b 0.5s ease;
+}
+
+summary {
+  cursor: pointer;
+}
+
+svg {
+  transition: all 0.3s ease-in-out;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
