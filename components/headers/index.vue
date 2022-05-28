@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-blue-500 p-4 flex justify-between items-center">
+    <div class="bg-corporate p-4 flex justify-between items-center">
       <div class="text-white font-bold text-2xl ml-0 md:ml-20">Next.js</div>
       <div
         class="hidden md:flex justify-between items-center text-white space-x-4 mr-0 md:mr-20"
