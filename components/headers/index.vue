@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="bg-corporate p-4 flex justify-between items-center">
-      <NuxtLink to="/" class="text-white font-bold text-2xl ml-0 md:ml-20">JK Admin</NuxtLink>
+      <NuxtLink to="/" class="text-white font-bold text-2xl ml-0">JK Admin</NuxtLink>
       <div
-        class="hidden md:flex justify-between items-center text-white space-x-4 mr-0 md:mr-20"
+        class="hidden md:flex justify-between items-center text-white space-x-4 mr-0"
       >
         <!-- <NuxtLink to="/" class="px-3 py-2"> Dashboard </NuxtLink>
         <NuxtLink to="/services" class="px-3 py-2"> Services </NuxtLink> -->
