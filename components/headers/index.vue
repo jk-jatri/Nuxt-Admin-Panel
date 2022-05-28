@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="bg-corporate p-4 flex justify-between items-center">
-      <div class="text-white font-bold text-2xl ml-0 md:ml-20">Next.js</div>
+      <NuxtLink to="/" class="text-white font-bold text-2xl ml-0 md:ml-20">JK Admin</NuxtLink>
       <div
         class="hidden md:flex justify-between items-center text-white space-x-4 mr-0 md:mr-20"
       >
@@ -10,7 +10,7 @@
         <NuxtLink to="/login" class="px-3 py-2"> Login </NuxtLink>
         <NuxtLink to="/sign-up" class="px-3 py-2"> Signup </NuxtLink>
         <img
-          src="https://images.generated.photos/vyaPXjHlqtBnCOz2zGuPFcbo4u9oGehWdZi9jBe1uhU/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Njk2NTgxLmpwZw.jpg"
+          src="@/assets/images/logo/logo.png"
           alt="profile"
           class="inline rounded-full w-10 h-10 shadow-md"
         />

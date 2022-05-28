@@ -1,6 +1,6 @@
 <template>
   <div class="relative transition-all ease-in-out" :class="width">
-     <input :id="id" :type="text" :placeholder="placeholder" class="customInput peer ">
+     <input :id="id" :type="type" :placeholder="placeholder" class="customInput peer " autocomplete="off">
      <label :for="id" class="customLabel">{{lableName}}</label>
   </div>
 </template>
