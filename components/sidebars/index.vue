@@ -1,15 +1,15 @@
 <template>
-  <div class="hidden md:block w-[300px] p-5">
-    <img
-      src="https://images.generated.photos/vyaPXjHlqtBnCOz2zGuPFcbo4u9oGehWdZi9jBe1uhU/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/Njk2NTgxLmpwZw.jpg"
-      alt="profile"
-      class="rounded-full w-2/5 shadow-md mx-auto"
-    />
-    <p class="uppercase font-bold text-xl text-center mt-3 text-gray-800">
-      Joyonto Karmakar
-    </p>
-    <div class="mt-5 space-y-2">
-      <NuxtLink to="/" class="block p-4 hover:text-white rounded-xl" :class="$route.path === '/' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500'">
+  <div class="hidden md:block w-[300px] p-5 bg-corporateBlack h-screen divide-y divide-corporateGray">
+    <div class="py-3">
+      <img src="@/assets/images/logo/logo.png" alt="profile" class="rounded-full w-2/5 shadow-md mx-auto"/>
+      <div class="leading-tight">
+        <h2 class="uppercase font-bold text-xl text-center mt-3 text-corporateGray">Joyonto Karmakar</h2>
+        <h2 class="text-sm text-center mt-3 text-corporateGray">admin@domain.com</h2>
+      </div>
+    </div>
+    <div class="mt-5 space-y-2 overflow-y-auto h-[calc(100vh-285px)] py-2">
+      <div class="pr-3">
+        <NuxtLink to="/" class="block p-4 text-corporate rounded-xl" :class="$route.path === '/' ? 'bg-corporateLight' : 'hover:bg-corporateLight'">
         Dashboard
       </NuxtLink>
       <dropdowns
@@ -19,16 +19,18 @@
         :detailsClass="detailsClass"
         :descriptionClass="descriptionClass"
       />
-      <NuxtLink to="/services" class="block p-4 hover:text-white rounded-xl" :class="$route.path === '/services' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500'">
+      <NuxtLink to="/services" class="block p-4 text-corporate rounded-xl" :class="$route.path === '/services' ? 'bg-corporateLight' : 'hover:bg-corporateLight'">
         Services
       </NuxtLink>
-      <NuxtLink to="/about" class="block p-4 hover:text-white rounded-xl" :class="$route.path === '/about' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500'">
+      <NuxtLink to="/about" class="block p-4 text-corporate rounded-xl" :class="$route.path === '/about' ? 'bg-corporateLight' : 'hover:bg-corporateLight'">
         About
       </NuxtLink>
-      <NuxtLink to="/contact" class="block p-4 hover:text-white rounded-xl" :class="$route.path === '/contact' ? 'bg-blue-500 text-white' : 'hover:bg-blue-500'">
+      <NuxtLink to="/contact" class="block p-4 text-corporate rounded-xl" :class="$route.path === '/contact' ? 'bg-corporateLight' : 'hover:bg-corporateLight'">
         Contact
       </NuxtLink>
+      </div>
     </div>
+    <p class="text-corporateGray text-xs text-center py-3">All Rights Reserved &copy; <NuxtLink to="https://joyontokarmakar.netlify.app" target="_blank" class="font-bold">Joyonto Karmakar</NuxtLink></p>
   </div>
 </template>
 
@@ -36,7 +38,7 @@
 export default {
   data() {
     return {
-      dropdownClass: "text-sm",
+      dropdownClass: "text-sm text-corporate",
       detailsClass: "block rounded-xl p-4",
       descriptionClass:"text-sm"
     };

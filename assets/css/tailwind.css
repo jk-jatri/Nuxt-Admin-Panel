@@ -53,3 +53,37 @@ summary::-webkit-details-marker {
 .customBtn{
   @apply w-1/2 p-2 font-semibold text-sm bg-corporate text-corporateLight rounded-full shadow-sm hover:scale-105 ease-out duration-300;
 }
+
+
+
+::selection {
+  background-color: #171F34;
+  color: #FF3E41;
+}
+
+/* Scroll bar */
+body {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  margin: 0px 2px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fff;
+  -webkit-box-shadow: inset 0 0 5px #fff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF3E41 !important;
+  -webkit-background: #FF3E41 !important;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #171F34 !important;
+  -webkit-background: #171F34 !important;
+}

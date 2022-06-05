@@ -1,8 +1,8 @@
 <template>
   <div class="block md:hidden">
-    <div class="w-3/4 h-screen absolute top-0 bottom-0 bg-blue-500 shadow-lg text-white transition-all duration-500 ease-in-out overflow-x-hidden z-10" :class="open ? 'left-0' : '-left-full'">
+    <div class="w-3/4 h-screen absolute top-0 bottom-0 bg-corporateBlack shadow-lg text-corporate transition-all duration-500 ease-in-out overflow-x-hidden z-10" :class="open ? 'left-0' : '-left-full'">
       <div class="p-4">
-        <p class="font-bold text-2xl">
+        <NuxtLink to="/" @click="close" class="block font-bold text-2xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 64 64"
@@ -42,9 +42,9 @@
               d="M35,53c-0.215,0-0.426-0.069-0.602-0.201C34.147,52.61,34,52.314,34,52v-6	c0-0.452,0.303-0.848,0.739-0.965l7.94-2.147l0.179-2.677l-7.634,1.763c-0.293,0.071-0.607-0.001-0.847-0.191S34,41.305,34,41V19	c0-0.552,0.447-1,1-1h15.257c0.28,0,0.548,0.118,0.737,0.324c0.189,0.207,0.283,0.483,0.259,0.762l-0.436,5.048	c-0.044,0.519-0.521,0.946-1.001,0.914L41,25.005v7.864l7.94-0.979c0.296-0.036,0.599,0.063,0.816,0.272	c0.217,0.209,0.328,0.505,0.302,0.806l-1.33,15.461c-0.035,0.413-0.322,0.761-0.72,0.875l-12.732,3.655	C35.186,52.987,35.093,53,35,53z M36,46.766v3.907l10.795-3.1l1.165-13.546l-7.838,0.966c-0.281,0.034-0.569-0.054-0.784-0.244	S39,34.287,39,34V24c0-0.266,0.106-0.521,0.295-0.709s0.413-0.286,0.71-0.291l8.899,0.044L49.167,20H36v19.743l7.722-1.783	c0.307-0.073,0.632,0.007,0.873,0.213c0.241,0.205,0.37,0.512,0.35,0.828l-0.316,4.733c-0.028,0.426-0.325,0.787-0.737,0.898	L36,46.766z"
             />
           </svg>
-        </p>
+        </NuxtLink>
       </div>
-      <NuxtLink to="/" class="block p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
+      <NuxtLink to="/" @click="close" class="block p-4 text-xl hover:bg-corporateLight rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
         Dashboard
       </NuxtLink>
       <dropdowns
@@ -54,14 +54,20 @@
         :detailsClass="detailsClass"
         :descriptionClass="descriptionClass"
       />
-      <NuxtLink to="/services" class="block p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
+      <NuxtLink to="/services" @click="close" class="block p-4 text-xl hover:bg-corporateLight rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
         Service
       </NuxtLink>
-      <NuxtLink to="/about" class="block p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
+      <NuxtLink to="/about" @click="close" class="block p-4 text-xl hover:bg-corporateLight rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
         About
       </NuxtLink>
-      <NuxtLink to="/contact" class="block p-4 text-xl hover:bg-white hover:text-black rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
+      <NuxtLink to="/contact" @click="close" class="block p-4 text-xl hover:bg-corporateLight rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
         Contact
+      </NuxtLink>
+      <NuxtLink to="/login" @click="close" class="block p-4 text-xl hover:bg-corporateLight rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
+        Login
+      </NuxtLink>
+      <NuxtLink to="/sign-up" @click="close" class="block p-4 text-xl hover:bg-corporateLight rounded-xl mx-4 cursor-pointer transition-all duration-300 ease-in-out">
+        SignUp
       </NuxtLink>
     </div>
     <div class="h-screen absolute top-0 bottom-0 bg-black/50 shadow-lg transition-all duration-500 ease-in-out cursor-pointer overflow-x-hidden z-10"
